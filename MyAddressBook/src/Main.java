@@ -26,12 +26,14 @@ public class Main {
         Dad.phone = "766367367";
         contactManager.addContact(Dad);
 
-         Contact result = contactManager.searchContact("Vaughn");
-         System.out.println(result.name);
+        Contact result = contactManager.searchContact("Vaughn");
+        System.out.println(result.email);
+
+        Contact delete = contactManager.deleteContact("Vaughn");
+        System.out.println(delete);
 
 
     }
-
 
 
 }

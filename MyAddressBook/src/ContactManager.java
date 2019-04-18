@@ -19,7 +19,17 @@ public class ContactManager {
                 return myFriends[i];
             }
         }
-        return  null;
+        return null;
+    }
+
+    public Contact deleteContact(String deleteContact){
+        for(int i=0; i<friendsCounter; i++) {
+            if (myFriends[i].name.equals(deleteContact)){
+                myFriends[i] = null;
+                System.out.print(deleteContact + " has been deleted and is ");
+            }
+        }
+        return null;
     }
 
 
