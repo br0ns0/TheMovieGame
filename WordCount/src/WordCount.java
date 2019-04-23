@@ -13,7 +13,7 @@ public class WordCount {
                 totalWords += line.split(" ").length; // split() breaks string around matches ie(" ") of the expression.
             // add total words to the number of words in each line until all lines are read
         }
-        System.out.println(totalWords);
+        System.out.printf("The file contains %d words",totalWords);
 
 
     }
